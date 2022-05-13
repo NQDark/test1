@@ -1,0 +1,411 @@
+:root {    
+    --primary-fon-color: #FFFFFF;    
+    --secondary-fon-color: #F5F4FA;
+    --editionary-fon-color: #2F303A;    
+    --primary-text-color:#000000;
+    --secondary-text-color: #757575;
+    --accent-color:#2196F3; 
+}
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {     
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin: 0;
+    color: var(--primary-text-color);
+    background-color: var(--primary-fon-color);
+}
+button {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    background-color: transparent;
+}
+a {
+    text-decoration: none; 
+    color: var(--primary-text-color);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+ }
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;       
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px, auto;
+}
+h3 {
+    margin: 0px;
+}
+p {
+    margin: 0px;
+}
+/*header*/
+
+.page-hader{  
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+
+}
+.nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    box-sizing: inherit;
+
+
+}
+.site-nav {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+}
+.logo-top {
+    font-family: "Raleway", sans-serif;    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    margin-right: 93px;
+}
+.site-nav-link{
+    margin-right: 50px;
+}
+.link{
+    margin: 0;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.current-link {
+    color: var(--accent-color);
+}
+
+.item-last{
+    margin-left: 50px;
+}
+.page-contacts {
+    display: flex;    
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.main-title {
+    display: block;
+    width: 696px;
+    margin: auto;
+}
+
+/*maine*/
+
+.benefits-title {
+    color: var(--primary-text-color);   
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0 auto;
+}
+.benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.benefits-list {
+    display: flex;  
+}
+.benefits-list-item::before {
+    display: block;
+    margin-bottom: 30px;
+    content: "";
+    height: 120px;
+    width: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--secondary-fon-color);
+}
+.antena::before{
+    background-image: url(../img/antenna.jpg);
+}
+.clock::before{
+    background-image: url(../img/clock.jpg);
+}
+.diagram::before{
+    background-image: url(../img/diagram.jpg);
+}
+.astronaut::before{
+    background-image: url(../img/astronaut.jpg);
+}
+.team-item {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+.benefits-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+.ofer-title {
+    color: var(--primary-text-color);   
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0 auto;
+}
+.offer-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--secondary-fon-color)
+}
+.team-title {
+    color: var(--primary-text-color);   
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
+.team-list-item {
+
+    background-color: var(--primary-fon-color);
+}
+.team-list-item-last {
+    background-color: var(--primary-fon-color);
+}
+.team-content{
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--secondary-text-color);
+}
+.team-card {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.team-media-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.team-media {
+    width: 20px;
+    height: 20px;
+}
+
+/*footer*/
+
+.end {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    line-height: 1.71;
+    background-color: var(--editionary-fon-color); 
+}
+
+/*portfolio*/
+
+.visually {
+    display: flex;
+    justify-content: center;
+}
+.works {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    flex-direction: column;
+}
+.works-button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.work-list-item { 
+ 
+    margin-bottom: 30px;
+}
+.work-item {
+    padding: 6px 22px;
+ 
+    margin-right: 8px;
+    text-align: center;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-fon-color);
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.work-item:last-child {
+    margin-right: 0px;
+}
+.work-button {
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+.page-contacts .link {
+    color: var(--secondary-text-color);
+}
+.page-contacts .link:hover {
+    color: var(--accent-color);
+}
+.curent-link {
+    color: var(--accent-color);
+}
+.site-nav .link:hover {
+    color: var(--accent-color);
+}
+
+.hero {
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--editionary-fon-color); 
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Фонова\ картинка.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    color: var(--primary-fon-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+}
+
+.hero-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 700px;
+    color: var(--primary-fon-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero button {
+    background-color: var(--accent-color);
+    color: var(--primary-fon-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 4px;
+    border: none;
+}
+/* Button */
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-fon-color);
+    
+}
+.work-item:hover  {
+    background-color: var(--accent-color);
+}
+.work-item:hover .work-button {
+    color: var(--primary-fon-color);  
+}
+.section-last {
+    background-color: var(--secondary-fon-color);
+}
+.team-content {
+    color: var(--secondary-text-color);
+}
+.benefits-item {
+    color: var(--secondary-text-color);
+}
+
+.adress-end {
+    color: var(--primary-fon-color);
+}
+.contacts-end {
+    color: var(--secondary-text-color);
+}
+.logo-end {
+    color: var(--primary-fon-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: left;
+}
+.team-media-link{
+    color: var(--secondary-text-color);
+}
+.team-media-link:hover{
+    background-color: var(--accent-color);
+}
+.linkedin{
+    background-image: url(../img/instagram.jpg);
+}
+.twitter{
+    background-image: url(../img/twitter.jpg);
+}
+.facebook{
+    background-image: url(../img/facebook.jpg);
+}
+.instagram{
+    background-image: url(../img/instagram.jpg);
+}
