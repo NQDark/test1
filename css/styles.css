@@ -231,7 +231,6 @@ footer {
     background-color: var(--primary-fon-color);
 }
 .team-content{
-    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
     color: var(--secondary-text-color);
@@ -306,37 +305,62 @@ footer {
 .works-button-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 .works-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.work-list-item { 
- 
-    margin-bottom: 30px;
+.work-list-item {  
+    margin-bottom: 28px;
+    background: var(--primary-fon-color);
+    border: 1px solid #EEEEEE;
+
+}
+.work-list-item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
+.work-list-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .work-item {
-    padding: 6px 22px;
- 
     margin-right: 8px;
-    text-align: center;
-    color: var(--primary-text-color);
-    background-color: var(--secondary-fon-color);
-    border: none; 
-    border-radius: 4px;
-    cursor: pointer;
 }
 
 .work-item:last-child {
     margin-right: 0px;
 }
 .work-button {
-    border: none;
+    padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-fon-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.work-card {
+    margin-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+.work-list-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 4px;
+    letter-spacing: 0.06em;
+}
+.work-list-content{
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
     letter-spacing: 0.03em;
 }
 
@@ -412,9 +436,6 @@ footer {
 }
 .section-last {
     background-color: var(--secondary-fon-color);
-}
-.team-content {
-    color: var(--secondary-text-color);
 }
 .benefits-item {
     color: var(--secondary-text-color);
