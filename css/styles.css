@@ -428,7 +428,7 @@ footer {
     background-color: var(--primary-fon-color);
     
 }
-.work-item:hover  {
+.work-button:hover  {
     background-color: var(--accent-color);
 }
 .work-item:hover .work-button {
@@ -509,9 +509,6 @@ address {
 .footer-media-link {
     background-color: rgba(255, 255, 255, 0.1);
 }
-.team-media-link{
-    /* color: var(--secondary-text-color); */
-}
 .team-media-link:hover{
     background-color: var(--accent-color);
 }
@@ -527,7 +524,6 @@ address {
 .instagram{
     background-image: url(../img/instagram.jpg);
 }
-
 .team-media:hover {
     fill: var(--primary-fon-color);
 }
