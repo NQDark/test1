@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
-    
   </head>
   <body>
        <header>
@@ -52,9 +51,9 @@
         <section class="hero">
             <div class="container">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button">Заказать услугу</button>
+                    <button type="button">Заказать услугу</button>                  
             </div>
-
+            
 
         </section>
 
@@ -290,7 +289,29 @@
            
         </div>
     </footer>
-       <!--тренування-->
+       <!--модальное окно-->
+       <form class="js-speaker-form">
+         <div class="point-x">
+          <svg width="30px" height="30px">
+             <use href="./img/sprite.svg#pointX"></use>
+           </svg>
+         </div>
+         <input type="text" name="name" />
+
+       </form>
+       <script>
+         (() => {
+          document
+            .querySelector('.js-speaker-form')
+            .addEventListener('submit', e => {
+              e.preventDefault();
+
+              new FormDate(e.currentTarget).forEach((value, mane) =>
+                console.log(`${name}: ${value}`),
+              );
+            });
+         })();
+       </script>
 
   </body>
 </html>

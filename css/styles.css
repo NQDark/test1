@@ -68,6 +68,7 @@ h2, h3 {
 }
 p {
     margin: 0px;
+    
 }
 footer {
     padding-top: 60px;
@@ -77,13 +78,16 @@ footer {
     background-color: var(--editionary-fon-color);
 }
 /*header*/
-
+.line {
+    border: 1px solid #ECECEC;
+}
 .page-hader{  
     display: flex;
     justify-content: space-between;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
 
 
 }
@@ -102,6 +106,7 @@ footer {
     padding: 0px;
     list-style: none;
     
+    
 }
 .logo-top {
     font-family: "Raleway", sans-serif;    
@@ -110,9 +115,10 @@ footer {
     line-height: 1.19;
     text-decoration: none;
     margin-right: 93px;
-}
+letter-spacing: 0.03em;}
 .site-nav-link{
     margin-right: 50px;
+    
 }
 .current-link {
     color: var(--accent-color);
@@ -438,7 +444,7 @@ footer {
     margin-top: 30px;
     border-radius: 4px;
     border: none;
-}
+cursor: p;}
 /* Button */
 .button {
     color: var(--title-text-color);
@@ -556,3 +562,64 @@ address {
 .clients-link:hover {
     border-color: var(--accent-color);
 }
+
+.box{
+position: relative;
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+}
+
+.box:hover .overlay {
+    transform: translatex(0);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color);  
+    transform: translatex(-100%);
+    transition: transform 250ms ease;
+
+  }
+  .overlay-text {
+    color: var(--primary-fon-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 63px;
+    margin-bottom: 63px;
+  }
+.js-speaker-form {
+    position: absolute;
+    width: 528px;
+    left: 536px;
+    height: 581px;
+    top: 221px;
+    background: var(--primary-fon-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: none;
+}
+.point-x {
+    display: inline-flex;
+
+    position: absolute;
+    right: 17px;
+    top: 17px;
+    border-radius: 50%;
+    background-color: var(--secondary-fon-color);
+}
+.point-x {
+
+
+}
+
+  
