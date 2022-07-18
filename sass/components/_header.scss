@@ -1,0 +1,158 @@
+.page-header {
+  border: 1px solid getColor("secondary-fon");
+
+  &__link {
+    margin-right: 0px;
+
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+      color: getColor("accent");
+    }
+  }
+
+  &__link--current {
+    color: getColor("accent");
+  }
+}
+
+.page-header__menu-icon {
+  display: none;
+
+  @media screen and (max-width: $tablet-width) {
+    display: flex;
+  }
+
+  &:hover {
+    fill: getColor("accent");
+  }
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.page-header__nav-container {
+  display: flex;
+  align-items: center;
+  box-sizing: inherit;
+  margin: 0;
+
+  @media screen and (max-width: $tablet-width) {
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+  }
+}
+
+.page-header__site-nav {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  list-style: none;
+
+  @media screen and (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__item {
+  position: relative;
+  padding: 32px 0;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+
+.page-header__contacts {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+
+  @media screen and (max-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.page-header__contacts-item {
+  margin-right: 30px;
+
+  @media screen and (max-width: $desktop-width) {
+    margin-right: 0px;
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.page-header__contacts-link {
+  display: inline-flex;
+  justify-content: center;
+  padding: 32px 0;
+  align-items: center;
+  color: getColor("secondary-text");
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+  }
+
+  @media screen and (max-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.header-line {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 4px;
+  background: getColor("accent");
+  border-radius: 2px;
+}
+
+.page-header__contacts-icon {
+  display: inline-flex;
+  margin-right: 8px;
+  align-self: center;
+  fill: currentColor;
+}
+
+.page-header--email {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.page-header--phone {
+  margin-right: 10px;
+  margin-left: 40px;
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}

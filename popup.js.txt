@@ -1,0 +1,13 @@
+     <script>
+         (() => {
+          document
+            .querySelector('.js-speaker-form')
+            .addEventListener('submit', e => {
+              e.preventDefault();
+
+              new FormDate(e.currentTarget).forEach((value, mane) =>
+                console.log(`${name}: ${value}`),
+              );
+            });
+         })();
+       </script>

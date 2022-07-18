@@ -1,0 +1,54 @@
+.clients__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: getColor("primary-text");
+  letter-spacing: 0.03em;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.clients__item {
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media screen and (max-width: $tablet-width) {
+    width: calc(100% / 2 - 30px);
+    margin: 15px; 
+  }
+  @media screen and (min-width: $tablet-max-width) and (max-width: $desktop-width) {   
+    width: calc(100% / 3 - 30px); 
+    margin: 15px;  
+  }
+  @media screen and (min-width: $desktop-max-width) {   
+    width: calc(100% / 6 - 30px);  
+    // TODO: перевірити для чого
+    // width: 170px;
+  }
+}
+
+.clients__logo-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  border: 1px solid getColor("gray");
+  border-radius: 4px;
+  fill: getColor("gray");
+  transition: fill 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &:hover,
+  &:focus {
+    border-color: getColor("accent");
+    fill: getColor("accent");
+    cursor: pointer;
+  }
+}

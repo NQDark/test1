@@ -1,0 +1,16 @@
+.logo {
+  margin-right: 93px;
+  font: 700 26px "Raleway", sans-serif;
+  line-height: 1.19;
+  color: getColor("primary-text");
+
+}
+
+.logo__web {
+  color: getColor("accent");
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  color: getColor("primary-fon");
+}

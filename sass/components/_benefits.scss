@@ -1,0 +1,65 @@
+.benefits__title--hidden {
+  display: none;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.benefits-list__item {
+  margin: 15px;
+
+  @media screen and (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $tablet-max-width) and (max-width: $desktop-width) {
+    width: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: $desktop-max-width) {
+    width: calc(100% / 4 - 30px);
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: getColor("secondary-fon");
+
+  }
+
+  &--antenna::before {
+    background-image: url(../../img/antenna.png);
+  }
+
+  &--clock::before {
+    background-image: url(../../img/clock.png);
+  }
+
+  &--diagram::before {
+    background-image: url(../../img/diagram.png);
+  }
+
+  &--astronaut::before {
+    background-image: url(../../img/astronaut.png);
+  }
+
+  &:not(:last-child) {
+    margin: 15px;
+  }
+
+}
+
+.benefits-list__subtitle {
+  margin-bottom: 10px;
+  color: getColor("primary-text");
+  text-transform: uppercase;
+
+}

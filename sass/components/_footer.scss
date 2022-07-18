@@ -1,0 +1,215 @@
+.footer-conteiner {
+  justify-content: space-between;
+  display: flex;
+  // TODO: remove
+  // align-items: baseline;
+
+
+  @media screen and (max-width: $desktop-width) {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $tablet-max-width) {
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 76px;
+  }
+
+  @media screen and (min-width: $desktop-max-width) {
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.footer-block {
+  display: block;
+  // TODO: попробувати центрувати через flex
+
+
+  @media screen and (max-width: $desktop-width) {
+    margin-right: 0px;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    margin-right: 0px;
+    padding: 0 35px;
+    width: 100%;
+
+    &:first-child {
+      margin-bottom: 60px;
+    }
+  }
+
+  @media screen and (max-width: $desktop-width) {
+
+    // TODO: перенести у footer-block
+    &:last-child {
+      margin: 0 auto;
+      margin-top: 60px;
+    }
+
+    // &:not(:last-child) {
+    //   // TODO: попробувати через :last-child
+    //   margin-bottom: 60px;
+    // }
+  }
+}
+
+
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+  // INFO:  приклад як додавати line-height
+  font: 700 26px/1.19 "Raleway", sans-serif;
+  // line-height: 1.19;
+  color: getColor("primary-fon");
+}
+
+.item {
+  margin-bottom: 9px;
+  display: block;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.link:hover {
+  color: getColor("accent");
+}
+
+.join-us {
+  margin-bottom: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-media {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-media-item {
+  margin-right: 10px;
+  display: block;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.footer-media-svg {
+  width: 20px;
+  height: 20px;
+  fill: getColor("primary-fon");
+}
+
+.footer-media-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: getColor("accent");
+  }
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer__form {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.footer__form-input {
+  padding: 16px 15px;
+  width: 358px;
+  height: 50px;
+  color: getColor("primary-fon");
+  background-color: getColor("editionary-fon");
+  border: 1px solid getColor("footer2");
+
+  @media screen and (min-width: $desktop-max-width) {
+    margin-right: 12px;
+  }
+
+  @media screen and (max-width: $desktop-width) {
+    margin-bottom: 20px;
+    // TODO: зробити резіновим
+    width: 450px;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+
+}
+
+.footer-form__button {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 13px 0px;
+  padding-left: 29px;
+  width: 200px;
+  // TODO: висоту явно задавати небажано. Потірбно додавати падінги
+  // height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: start;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: getColor("primary-fon");
+  background-color: getColor("accent");
+  fill: getColor("primary-fon");
+
+  @media screen and (max-width: $desktop-width) {
+    margin: 0 auto;
+  }
+}
+
+.footer__button-icon {
+  // TODO: попробувати відцентрувати за допомогою флексів
+  // position: relative;
+  // top: 50%;
+  // right: 50%;
+  // transform: translateY(-50%);
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+
+}
+
+.contacts-footer {
+  color: getColor("footer1");
+}
+
+.footer-media-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__form-input {
+  border-radius: 4px;
+
+  &:hover {
+    border-color: getColor("accent");
+  }
+}

@@ -1,0 +1,130 @@
+.page-header__popup-logo {
+    width: 100%;
+    height: 60px;
+    padding: 16px 15px;
+    border: 1px solid getColor("secondary-fon");
+}
+
+.page-header-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+
+    &.visible {
+        visibility: visible;
+    }
+
+    &.visible.animated {
+        opacity: 1;
+    }
+}
+
+.page-header__popup {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background: getColor("primary-fon");
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(0deg) scale(0.1);
+}
+
+.page-header-backdrop.visible.animated .page-header__popup {
+    transform: rotate(360deg) scale(1);
+}
+
+.point-header-x {
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    top: 17px;
+    right: 25px;
+    cursor: pointer;
+
+
+    &:hover .point-header-x-link {
+        fill: getColor("accent");
+    }
+}
+
+.page-header-menu__site-nav {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page-header-menu__item {
+    // TODO: font
+    font: 500 21px/0.02 "Roboto", normal;
+    // font-family: 'Roboto';
+    // font-style: normal;
+    // font-weight: 500;
+    // font-size: 18px;
+    // line-height: 21px;
+    // letter-spacing: 0.02em;
+    margin-top: 60px;
+    text-align: center
+}
+
+.page-header-menu__link {
+    color: getColor("primary-text");
+
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+        color: getColor("accent");
+    }
+
+    &--current {
+        color: getColor("accent");
+    }
+}
+
+.page-header-menu__contacts {
+    margin: 0px auto;
+    text-align: center;
+    list-style: none;
+}
+
+.page-header-menu__contacts-item {
+    margin-top: 60px;
+
+    &:last-child {
+        margin-top: 10px;
+        margin-bottom: 60px;
+    }
+}
+
+.page-header-menu__contacts-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: getColor("secondary-text");
+
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+        color: getColor("accent");
+    }
+}
+
+.page-header-menu__contacts-icon {
+    display: inline-flex;
+    margin-right: 8px;
+    align-self: center;
+    fill: currentColor;
+}
+

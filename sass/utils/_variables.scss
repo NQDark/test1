@@ -1,0 +1,32 @@
+$colors: (
+  "secondary-text": #757575,
+  "primary-fon": #ffffff,
+  "accent": #2196f3,
+  "primary-text": #212121,
+  "footer1": rgba(255, 255, 255, 0.6),
+  "footer2": rgba(255, 255, 255, 0.3),
+  "editionary-fon": #2f303a,
+  "secondary-fon": #f5f4fa,
+  "gray": #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+
+
+$geometry: (
+  "section-padding": 94px,
+  "base-radius": 4px,
+);
+
+@function getGeometry($key) {
+  @return map-get($geometry, $key);
+}
+
+$mobile-width: 480px;
+$tablet-width: 768px;
+$tablet-max-width: 769px;
+$desktop-width: 1200px;
+$desktop-max-width: 1201px;

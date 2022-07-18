@@ -1,0 +1,144 @@
+.main-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-form__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: getColor("primary-text");
+}
+
+.main-form__label-container {
+    margin-bottom: 5px;
+}
+
+.main-form__label {
+    font-size: 12px;
+    line-height: 1.16;
+    color: getColor("secondary-text");
+}
+
+.main-form__input {
+    width: 100%;
+    height: 38px;
+    padding-left: 40px;
+    border: 1px solid getColor("gray");
+    border-radius: 4px;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        border-color: getColor("accent");
+    }
+}
+
+.main-form__icon-container {
+    position: relative;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .main-form__icon {
+        fill: getColor("accent");
+        // TODO: винести з hover і задати властивість для якої має працювати транізшн
+    }
+}
+
+.main-form__label-container--comments {
+    margin-bottom: 20px;
+}
+
+.main-form__textarea {
+    display: block;
+    resize: none;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid getColor("gray");
+    border-radius: 4px;
+    outline: transparent;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover {
+        border-color: getColor("accent");
+    }
+}
+
+.main-form__label-container--mailing {
+    margin-bottom: 30px;
+    padding-left: 24px;
+    display: flex;
+    position: relative;
+
+    &:hover .main-form__checkbox-icon {
+        border-color: getColor("accent");
+    }
+}
+
+.main-form__checkbox,
+.works__title--hidden {
+    // TODO: треба пофіксити чекбокси
+    display: none;
+}
+
+.main-form__checkbox-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 16px;
+    height: 15px;
+    border: 2px solid getColor("primary-text");
+    border-radius: 2px;
+    outline: transparent;
+    transform: translateY(-50%);
+}
+
+.main-form__checkbox:checked+.main-form__checkbox-icon {
+    border-color: getColor("accent");
+    background-color: getColor("accent");
+    background-position: center;
+    background-image: url(../../img/Vector.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.main-form__icon {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    fill: getColor("primary-text");
+    cursor: pointer;
+}
+
+.main-form__label--mailing {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.main-form__link {
+    margin-left: 4px;
+    color: getColor("accent");
+    text-decoration-line: underline;
+}
+
+.main-form__button {
+    width: 200px;
+    // TODO: висоту не задавати
+    padding: 12px 0;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    margin: auto;
+    color: getColor("primary-fon");
+    background-color: getColor("accent");
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
