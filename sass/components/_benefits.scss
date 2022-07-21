@@ -5,7 +5,6 @@
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .benefits-list__item {
@@ -32,7 +31,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: getColor("secondary-fon");
-
   }
 
   &--antenna::before {
